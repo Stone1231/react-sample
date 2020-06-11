@@ -2,10 +2,10 @@ import React from "react";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import App from "./App";
 import IntroducingJSX from "./MainConcepts/jsxEx";
-import { Welcome, Comment, comment } from "./MainConcepts/PropsEx";
+import PropsDemo from "./MainConcepts/PropsEx";
 import Clock from "./MainConcepts/StatesEx";
 import { Clock as Clock2 } from "./MainConcepts/StatesEx2";
-import { Toggle, ActionLink } from "./MainConcepts/HandlingEventsEx";
+import HandlingEventsDemo from "./MainConcepts/HandlingEventsEx";
 import { TaskList, taskList } from "./MainConcepts/HandlingEventsEx2";
 import LoginControl from "./MainConcepts/ConditionalRenderingEx";
 import Page from "./MainConcepts/ConditionalRenderingEx2";
@@ -81,31 +81,15 @@ const data = [
       {
         path: "/prop",
         title: "Prop",
-        main: () => <Welcome name="stone" />,
-      },
-      {
-        path: "/prop2",
-        title: "Prop 2",
-        main: () => (
-          <Comment
-            date={comment.date}
-            text={comment.text}
-            author={comment.author}
-          />
-        ),
+        main: () => <PropsDemo />,
       },
       {
         path: "/event",
-        title: "Event: Html VS React",
-        main: () => <ActionLink />,
+        title: "Handling Events",
+        main: () => <HandlingEventsDemo />,
       },
       {
         path: "/event2",
-        title: "Event: Toggle",
-        main: () => <Toggle />,
-      },
-      {
-        path: "/event3",
         title: "Event: List",
         main: () => <TaskList list={taskList} />,
       },

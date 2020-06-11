@@ -49,11 +49,11 @@ export class ControlledForm extends React.Component {
     alert(
       "isGoing: " +
         this.state.isGoing +
-        "numberOfGuests: " +
+        "\nnumberOfGuests: " +
         this.state.numberOfGuests +
-        "flavor: " +
+        "\nflavor: " +
         this.state.flavor +
-        "flavors: " +
+        "\nflavors: " +
         this.state.flavors
     );
     event.preventDefault();
@@ -142,11 +142,11 @@ export class UncontrolledForm extends React.Component {
     alert(
       "isGoing: " +
         this.isGoing.current.checked +
-        "numberOfGuests: " +
+        "\nnumberOfGuests: " +
         this.numberOfGuests.current.value +
-        "flavor: " +
+        "\nflavor: " +
         this.flavor.current.value +
-        "flavors: " +
+        "\nflavors: " +
         selectedOptions
     );
     event.preventDefault();

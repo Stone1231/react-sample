@@ -42,9 +42,16 @@ const comment = {
     avatarUrl: "https://placekitten.com/g/64/64",
   },
 };
-// ReactDOM.render(
-//   <Comment date={comment.date} text={comment.text} author={comment.author} />,
-//   document.getElementById("root")
-// );
 
-export { Welcome, Comment, comment };
+export default function Demo() {
+  return (
+    <>
+      <Welcome name="stone" />
+      <Comment
+        date={comment.date}
+        text={comment.text}
+        author={comment.author}
+      />
+    </>
+  );
+}

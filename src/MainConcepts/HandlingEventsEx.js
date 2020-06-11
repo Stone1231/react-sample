@@ -1,11 +1,5 @@
 import React from "react";
 
-// html
-// <a href="#" onClick="console.log('The link was clicked.'); return false">
-//   Click me
-// </a>
-
-// react
 export function ActionLink() {
   function handleClick(e) {
     e.preventDefault();
@@ -41,4 +35,20 @@ export class Toggle extends React.Component {
       </button>
     );
   }
+}
+
+export default function Demo() {
+  return (
+    <>
+      <div>
+        Html VS React
+        <ActionLink />
+      </div>
+      <br />
+      <div>
+        Toggle
+        <Toggle />
+      </div>
+    </>
+  );
 }
